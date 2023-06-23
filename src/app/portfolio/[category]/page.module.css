@@ -1,4 +1,6 @@
+
 .container {
+   
 }
 .catTitle {
   color: #53c28b;
@@ -21,7 +23,7 @@
   position: relative;
 }
 
-.img{
+.image{
   object-fit: cover;
 }
 
