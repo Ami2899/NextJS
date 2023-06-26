@@ -3,10 +3,9 @@ import style from "./page.module.css";
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ObjectId } from 'mongodb';
 
 export type ItemValue={
-  _id:ObjectId;
+  _id:string;
   id:string;
   img:string;
   title:string;

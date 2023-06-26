@@ -21,4 +21,8 @@ const userSchema = new Schema({
     { timestamps: true }
 )
 
-export default mongoose.model("User",userSchema)
+const existingPostModel = mongoose.models["User"];
+
+const User = existingPostModel || mongoose.model("User", userSchema);
+
+export default User;
